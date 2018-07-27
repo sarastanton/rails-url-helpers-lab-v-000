@@ -11,7 +11,6 @@ class StudentsController < ApplicationController
   end
 
   def activate
-    binding.pry
     @student = Student.find(params[:id])
     redirect_to student_path(@student)
 
